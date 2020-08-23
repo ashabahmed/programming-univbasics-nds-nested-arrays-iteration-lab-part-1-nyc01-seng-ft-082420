@@ -12,6 +12,4 @@ first_array = 0
     end
     first_array += 1
   end
-    
-
 end
