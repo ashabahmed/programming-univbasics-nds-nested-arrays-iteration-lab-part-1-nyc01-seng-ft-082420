@@ -4,12 +4,13 @@ def find_even_values(src)
   # Output all even values in each nested array
   # src.each { |i| i.each {|num| puts num if num.even?} }
 first_array = 0 
-  while first_array < src.length do 
-    second_array = 0 
-    while second_array < src[first_array].length
-    puts src[first_array][second_array] if src[first_array][second_array].even?
-    second_array += 1
-    end
-    first_array += 1
-  end
+  # while first_array < src.length do 
+  #   second_array = 0 
+  #   while second_array < src[first_array].length
+  #   puts src[first_array][second_array] if src[first_array][second_array].even?
+  #   second_array += 1
+  #   end
+  #   first_array += 1
+  # end
+  src.flatten.each{ |n| puts n if n.even?}
 end
